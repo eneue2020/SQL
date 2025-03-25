@@ -5,6 +5,7 @@ CREATE TABLE alumnos(
     nombre varchat(45) DEFAULT NULL,
     nota decimal(10,0) DEFAULT NULL,
     email varchar(45) not null,
-    PRIMARY KEY(id)
+    PRIMARY KEY(id),
+    FOREIGN  KEY (id_escuela) references escuela(id)
 
-)
+);
